@@ -22,8 +22,8 @@ end
 # x loose, y draw, z win
 function score_round_2(them, me)
     ts = their_score[them]
-    mc = my_action[me]
-    ms = mod1(ts+mc,3)
+    ma = my_action[me]
+    ms = mod1(ts+ma,3)
 
     return match(ts,ms) + ms
 
