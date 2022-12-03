@@ -9,7 +9,7 @@ open("inputs/day3.txt") do f
     group_cnt = 1
     group_sets = [Set{Char}(), Set{Char}(), Set{Char}()]
     for line in readlines(f)
-        split = length(line) ÷ 2
+        split = length(line) ÷ 2 # integer division
         c1 = line[1:split]
         c2 = line[split+1:end]
         sc1 = Set(c1)
