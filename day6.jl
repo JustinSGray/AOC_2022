@@ -4,7 +4,6 @@ mutable struct PacketSniffer
     window::Vector{Char}
     idx::Int64
     size::Int64
-    market::Int64
 end
 
 function Base.push!(ps::PacketSniffer, val::Char)
